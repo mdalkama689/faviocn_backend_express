@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "prestart": "npm run build",
-    "start": "nodemon .",
+    "start": "node dist/index.js",
     "dev": "npx concurrently  --kill-others \"npm run watch\" \" npm start\" "
   },
   "keywords": [],
