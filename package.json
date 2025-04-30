@@ -4,11 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "prestart": "npm run build",
+    "build": "tsc -b",
     "start": "node dist/index.js",
-    "dev": "npx concurrently  --kill-others \"npm run watch\" \" npm start\" "
+    "dev": "npm run build && npm run start"
   },
   "keywords": [],
   "author": "",
